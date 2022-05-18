@@ -22,8 +22,7 @@ public class JavaDevelopment extends JFrame implements FascinatingWorkable, Acti
 	private static final long serialVersionUID = 1L;
 
 	   JFrame javaFrame = new JFrame();
-	   JButton button1 = new JButton("If you love Java.. ");
-	
+	   JButton button1 = new JButton("If you love Java.. ");	
 
 	   JavaDevelopment(){			
 			doWhatYouLove();
@@ -40,6 +39,12 @@ public class JavaDevelopment extends JFrame implements FascinatingWorkable, Acti
 	   ImageIcon image = new ImageIcon("C:\\Users\\Nutzer\\Katrin\\Programmieren_ks\\eclipse_everything\\Java_Design Patterns_ks\\MyWay\\src\\main\\java\\Vektorgraphik_Immuno.png");
 	   javaFrame.setIconImage(image.getImage());
 	   javaFrame.setVisible(true); 
+	   
+		button1.setBackground(Color.white);
+		button1.setForeground(new Color(0,25,250));
+		button1.setFont(new Font(null, Font.PLAIN, 25));
+		button1.setFocusable(false);
+		button1.addActionListener(this);
 	   	   
 		JPanel panel1 = new JPanel();
 		JPanel panel2 = new JPanel();
@@ -91,16 +96,9 @@ public class JavaDevelopment extends JFrame implements FascinatingWorkable, Acti
 		panel5.add(panel9, BorderLayout.EAST);
 		panel5.add(panel10, BorderLayout.CENTER);
 
-		// button1.setBounds(50, 100, 150, 250);
-		button1.setBackground(Color.white);
-		button1.setForeground(new Color(0,25,250));
-		button1.setFont(new Font(null, Font.PLAIN, 25));
 		panel5.add(button1);
-  
-		button1.addActionListener(this);
-	
 	}
- 
+
 
 public void actionPerformed(ActionEvent e) {
 	if(e.getSource()==button1) {
