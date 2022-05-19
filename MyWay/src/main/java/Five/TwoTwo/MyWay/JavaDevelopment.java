@@ -16,6 +16,7 @@ import org.springframework.stereotype.Component;
 
 
 @Component
+@Primary
 public class JavaDevelopment extends JFrame implements FascinatingWorkable, ActionListener {
 	
 	
@@ -103,7 +104,7 @@ public class JavaDevelopment extends JFrame implements FascinatingWorkable, Acti
 public void actionPerformed(ActionEvent e) {
 	if(e.getSource()==button1) {
 		NewWindow newWindow = new NewWindow();
-	//	buton1.dispose();
+	
 	}
 	
 }
