@@ -13,7 +13,7 @@ public class App  {
         FascinatingWorkable perfectJob = (FascinatingWorkable)context.getBean("javaDevelopment");
         perfectJob.doWhatYouLove();
     	
-       
+       ((AbstractApplicationContext) context).close();
     	
     	
     }
