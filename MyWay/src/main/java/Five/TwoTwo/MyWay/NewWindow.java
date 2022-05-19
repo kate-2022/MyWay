@@ -29,6 +29,7 @@ public class NewWindow implements ActionListener {
 		label1.setBounds(50, 100, 75, 100);
 		label1.setFont(new Font(null, Font.PLAIN, 20));
 		label1.setBackground(Color.blue);
+		label1.setForeground(Color.green);
 		label1.setOpaque(true);
 		
 		newFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -39,15 +40,19 @@ public class NewWindow implements ActionListener {
 		
 		checkIt1.setText("It´s the most beautiful language ever :D");
 		checkIt1.setFocusable(false);
+		checkIt1.addActionListener(this);
 		
 		checkIt2.setText("I prefer it from Python - Python is for babies");
 		checkIt2.setFocusable(false);
+		checkIt2.addActionListener(this);
 		
 		checkIt3.setText("It´s just magic..");
 		checkIt3.setFocusable(false);
+		checkIt3.addActionListener(this);
 		
 		checkIt4.setText("Stupid question! :P");
 		checkIt4.setFocusable(false);
+		checkIt4.addActionListener(this);
 		
 		newFrame.add(label1);
 	
@@ -63,6 +68,7 @@ public class NewWindow implements ActionListener {
 		panel1.add(checkIt4);
 		
 		newFrame.add(panel1);		
+		panel1.add(label2);
 		newFrame.pack();
 		newFrame.setVisible(true); 
     	
