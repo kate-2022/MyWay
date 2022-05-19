@@ -64,6 +64,7 @@ public class NewWindow implements ActionListener {
 		
 		panel2.setBackground(Color.green);
 		panel2.setPreferredSize(new Dimension(150, 100));
+		label2.setForeground(Color.blue);
 		panel2.add(label2);
 		
 		
