@@ -25,7 +25,7 @@ public class JavaDevelopment extends JFrame implements FascinatingWorkable, Acti
 	   JButton button1 = new JButton("If you love Java.. ");	
 
 	   JavaDevelopment(){			
-			doWhatYouLove();
+		//  doWhatYouLove();
 		}
 
  public void doWhatYouLove() {
