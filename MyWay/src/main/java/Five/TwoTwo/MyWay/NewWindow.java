@@ -80,7 +80,7 @@ public class NewWindow implements ActionListener {
 			label2.setText("Absolutely..");
 		}
 		else if (e.getSource()==checkIt4) {
-			label2.setText("Wtf??");		
+			label2.setText("Uiuiui...??");		
 		}
 		
 	}
