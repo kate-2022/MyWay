@@ -22,7 +22,8 @@ public class NewWindow implements ActionListener {
 	JCheckBox checkIt2 = new JCheckBox();
 	JCheckBox checkIt3 = new JCheckBox();
 	JCheckBox checkIt4 = new JCheckBox();
-	
+	JPanel panel1 = new JPanel();	
+	JPanel panel2 = new JPanel();	
 
 	NewWindow(){
 		
@@ -56,11 +57,15 @@ public class NewWindow implements ActionListener {
 		
 		newFrame.add(label1);
 	
-    	JPanel panel1 = new JPanel();	
+    //	JPanel panel1 = new JPanel();	
 		
-		panel1.setBackground(Color.green);
+		panel1.setBackground(Color.white);
 		panel1.setPreferredSize(new Dimension(500, 100));
-
+		
+		panel2.setBackground(Color.green);
+		panel2.setPreferredSize(new Dimension(150, 100));
+		panel2.add(label2);
+		
 		
 		panel1.add(checkIt1);
 		panel1.add(checkIt2);
@@ -68,7 +73,7 @@ public class NewWindow implements ActionListener {
 		panel1.add(checkIt4);
 		
 		newFrame.add(panel1);		
-		panel1.add(label2);
+		newFrame.add(panel2);
 		newFrame.pack();
 		newFrame.setVisible(true); 
     	
@@ -86,7 +91,7 @@ public class NewWindow implements ActionListener {
 			label2.setText("Absolutely..");
 		}
 		else if (e.getSource()==checkIt4) {
-			label2.setText("Uiuiui...??");		
+			label2.setText("Uiuiui...!!");		
 		}
 		
 	}
