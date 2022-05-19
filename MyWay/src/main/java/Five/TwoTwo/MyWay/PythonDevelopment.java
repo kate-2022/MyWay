@@ -20,7 +20,7 @@ public class PythonDevelopment implements FascinatingWorkable {
 	JButton myButton = new JButton("What about Python development? ");
 	
 		PythonDevelopment(){		
-			doWhatYouLove();	
+			// doWhatYouLove();	
 		}
 		
 	
